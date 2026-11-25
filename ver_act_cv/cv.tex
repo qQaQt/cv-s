@@ -1,0 +1,205 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage[
+    left=1.5cm,
+    right=1.5cm,
+    top=1.5cm,
+    bottom=1.5cm
+]{geometry}
+\usepackage{titlesec}
+
+\pagenumbering{gobble}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% Компактные списки
+\setlist[itemize]{
+    noitemsep,
+    topsep=0pt
+}
+
+% Заголовки разделов
+\titleformat{\section}
+    {\large\bfseries}
+    {}
+    {0pt}
+    {}
+
+\titlespacing*{\section}
+    {0pt}
+    {10pt}
+    {4pt}
+
+% Подзаголовки
+\titleformat{\subsection}
+    {\bfseries}
+    {}
+    {0pt}
+    {}
+
+\titlespacing*{\subsection}
+    {0pt}
+    {6pt}
+    {2pt}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black,
+    linkcolor=black
+}
+
+\begin{document}
+
+%================================================
+% HEADER
+%================================================
+
+\begin{center}
+    {\LARGE \textbf{Артём Шкарбан}} \\[0.5em]
+
+    \faEnvelope\
+    \href{mailto:shkarban.ab@phystech.edu}
+    {shkarban.ab@phystech.edu}
+    \quad
+    \faTelegram\ @artemarte1978
+\end{center}
+
+%================================================
+% SKILLS
+%================================================
+
+\section*{НАВЫКИ}
+
+SystemVerilog
+\quad
+Verilog
+\quad
+FPGA
+\quad
+Xilinx Vivado
+\quad
+UVM
+\quad
+Xcelium
+\quad
+Genus
+\quad
+Git
+\quad
+Linux
+\quad
+Tcl
+\quad
+Python
+\quad
+MATLAB
+
+\rule{\linewidth}{2pt}
+
+%================================================
+% EXPERIENCE
+%================================================
+
+\section*{ОПЫТ РАБОТЫ}
+
+%------------------------------------------------
+% YADRO
+%------------------------------------------------
+
+\subsection*{Инженер аппаратного обеспечения}
+
+\textbf{YADRO, Октябрь 2025 --- настоящее время}
+
+\textbf{Задачи}
+
+\begin{itemize}
+    \item Изучение алгоритмов POLAR, LDPC и TBCC-кодирования в рамках стандартов 5G NR.
+    \item Разработка функциональных RTL-модулей на SystemVerilog для блоков канального кодирования 5G NR.
+    \item Поддержка Assembly Unit (AU) на этапах проверки дизайна с использованием LINT, LEC, SYN и Litmus.
+    \item Верификация разработанных блоков совместно с командой верификации с использованием UVM и regression-тестирования.
+\end{itemize}
+
+\textbf{Результаты}
+
+\begin{itemize}
+    \item На основе изученных спецификаций разработал функциональные RTL-блоки, вошедшие в состав ускорителей POLAR ENC и LDPC ENC.
+    \item Дорабатывал и интегрировал функциональные модули в составе блоков канального кодирования.
+    \item Исправлял функциональные и интеграционные ошибки, выявленные в ходе UVM-регрессий.
+    \item Поддерживал разработанные блоки до прохождения LINT, LEC и синтеза.
+\end{itemize}
+
+\rule{\linewidth}{1pt}
+
+%------------------------------------------------
+% MIPT LAB
+%------------------------------------------------
+
+\subsection*{Инженер-программист}
+
+\textbf{Лаборатория прикладных нанотехнологий МФТИ, Декабрь 2024 --- Октябрь 2025}
+
+\textbf{Задачи}
+
+\begin{itemize}
+    \item Разработка IP-блоков на SystemVerilog для FPGA Intel (Altera) и Xilinx.
+    \item Верификация RTL-кода.
+    \item Моделирование помехоустойчивых систем в MATLAB.
+\end{itemize}
+
+\textbf{Результаты}
+
+\begin{itemize}
+    \item Доработал существующую модель BCH-декодера в MATLAB.
+    \item На основе MATLAB-модели разработал RTL-модули BCH-энкодера и BCH-декодера.
+    \item Провёл функциональную верификацию разработанных модулей с использованием тестбенчей.
+\end{itemize}
+
+\rule{\linewidth}{1pt}
+
+%------------------------------------------------
+% LEPTON
+%------------------------------------------------
+
+\subsection*{Инженер-программист}
+
+\textbf{НПО «Лептон», Ноябрь 2022 --- Сентябрь 2024}
+
+\textbf{Задачи}
+
+\begin{itemize}
+    \item Разработка IP-блоков и их реализация на FPGA Intel.
+    \item Разработка Python-скриптов для взаимодействия с внешними устройствами.
+\end{itemize}
+
+\textbf{Результаты}
+
+\begin{itemize}
+    \item Реализовал интерфейсы взаимодействия FPGA с датчиками температуры и давления.
+    \item Реализовал передачу данных от внешних устройств через FPGA на компьютер.
+\end{itemize}
+
+\rule{\linewidth}{2pt}
+
+%================================================
+% EDUCATION
+%================================================
+
+\section*{ОБРАЗОВАНИЕ}
+
+\textbf{Московский физико-технический институт (МФТИ)}
+
+\textbf{Факультет радиотехники и кибернетики (ФРТК), 2025 --- настоящее время, магистратура}
+
+\vspace{4pt}
+
+\textbf{Московский физико-технический институт (МФТИ)}
+
+\textbf{Факультет аэрокосмических исследований (ФАКИ), 2020 --- 2025, бакалавриат}
+
+\end{document}
